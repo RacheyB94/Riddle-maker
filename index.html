@@ -7,35 +7,39 @@
     <title>Riddle maker</title>
   </head>
   <body>
-    <h1>Generate a riddle</h1>
-    <header>
-      <main>
-        <form>
-          <input
-            type="text"
-            placeholder="What kind of riddle would you like?"
-            autofocus
-            required
-            autocomplete="off"
-          />
-        </form>
-        <div>
-          The riddle will appear here
-          <br />
-          The answer will appear here
-        </div>
-      </main>
-    </header>
-    <footer>
-      This project was coded by
-      <a href="https://github.com/RacheyB94" target="_blank">Rachel Brooks</a>
-      and is open-sourced on
-      <a href="https://github.com/RacheyB94/Riddle-maker" target="_blank"
-        >GitHub</a
-      >
-      and is hosted on
-      <a href="https://riddle-maker.netlify.app/" target="_blank">Netlify</a>.
-    </footer>
+    <div class="container">
+      <h1>Generate a riddle</h1>
+      <header>
+        <main>
+          <form>
+            <input
+              type="text"
+              placeholder="What kind of riddle would you like?"
+              autofocus
+              required
+              autocomplete="off"
+              class="instructions"
+            />
+            <input type="submit" class="submit-button" />
+          </form>
+          <div class="riddle">
+            The riddle will appear here
+            <br />
+            The answer will appear here
+          </div>
+        </main>
+      </header>
+      <footer>
+        This project was coded by
+        <a href="https://github.com/RacheyB94" target="_blank">Rachel Brooks</a>
+        and is open-sourced on
+        <a href="https://github.com/RacheyB94/Riddle-maker" target="_blank"
+          >GitHub</a
+        >
+        and is hosted on
+        <a href="https://riddle-maker.netlify.app/" target="_blank">Netlify</a>.
+      </footer>
+    </div>
     <script src="src/index.js"></script>
   </body>
 </html>
