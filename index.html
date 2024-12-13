@@ -3,32 +3,30 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    >
     <link rel="stylesheet" href="src/style.css" />
     <title>Riddle maker</title>
   </head>
   <body>
     <div class="container">
-      <h1>Generate a riddle</h1>
       <header>
-        <main>
-          <form>
-            <input
-              type="text"
-              placeholder="What kind of riddle would you like?"
-              autofocus
-              required
-              autocomplete="off"
-              class="instructions"
-            />
-            <input type="submit" class="submit-button" />
-          </form>
-          <div class="riddle">
-            The riddle will appear here
-            <br />
-            The answer will appear here
-          </div>
-        </main>
+        <h1>Generate a riddle</h1>
       </header>
+      <main>
+        <form id="riddle-generator-form">
+          <input
+            type="text"
+            placeholder="What kind of riddle would you like?"
+            autofocus
+            required
+            autocomplete="off"
+            class="instructions"
+          />
+          <input type="submit" class="submit-button" />
+        </form>
+        <div class="riddle" id="riddle"></div>
+      </main>
       <footer>
         This project was coded by
         <a href="https://github.com/RacheyB94" target="_blank">Rachel Brooks</a>
